@@ -132,6 +132,7 @@ function loadAdminPanel() {
 
         for (const uid in users) {
             const user = users[uid];
+            if (user.role === 'device') continue;
             const row = tbody.insertRow();
             row.innerHTML = `
                 <td>${user.alias || user.email}</td>
@@ -190,5 +191,6 @@ logoutButton.addEventListener('click', () => {
     auth.signOut();
 
 });
+
 
 
