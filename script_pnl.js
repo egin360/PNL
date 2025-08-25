@@ -121,7 +121,7 @@ function loadAdminPanel() {
         table.innerHTML = `
             <thead>
                 <tr>
-                    <th>Usuario (Email)</th>
+                    <th>Usuario</th>
                     <th>Donosti</th>
                     <th>Lasarte</th>
                 </tr>
@@ -190,3 +190,4 @@ logoutButton.addEventListener('click', () => {
     auth.signOut();
 
 });
+
