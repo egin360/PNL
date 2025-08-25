@@ -134,7 +134,7 @@ function loadAdminPanel() {
             const user = users[uid];
             const row = tbody.insertRow();
             row.innerHTML = `
-                <td>${user.email}</td>
+                <td>${user.alias || user.email}</td>
                 <td>
                     <label class="switch">
                         <input type="checkbox" data-uid="${uid}" data-device="Donosti" ${user.permissions && user.permissions.Donosti ? 'checked' : ''}>
@@ -188,4 +188,5 @@ loginForm.addEventListener('submit', (e) => {
 
 logoutButton.addEventListener('click', () => {
     auth.signOut();
+
 });
