@@ -117,9 +117,7 @@ button:hover {
 #admin-content td {
     font-size: 17px;
 }
-#admin-content th:nth-child(1), #admin-content td:nth-child(1) {
-        width: 100px; /* Ancho para la columna de Usuario */
-}
+
 #admin-content th:nth-child(2), #admin-content td:nth-child(2),
 #admin-content th:nth-child(3), #admin-content td:nth-child(3) {
         width: 50px; /* Ancho para las columnas de Permiso */
@@ -233,4 +231,5 @@ input:checked + .slider:before {
     transform: translateX(20px);
 
 }
+
 
