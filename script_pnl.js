@@ -108,7 +108,7 @@ function loadAdminPanel() {
     // --- TARJETA 2: USUARIOS Y PERMISOS ---
     const usersCard = document.createElement('div');
     usersCard.className = 'admin-card';
-    usersCard.innerHTML = '<h2>Usuarios</h2>';
+    usersCard.innerHTML = '<h2>Permisos Usuarios</h2>';
     adminContentDiv.appendChild(usersCard);
 
     usersRef.on('value', (snapshot) => {
@@ -190,4 +190,5 @@ logoutButton.addEventListener('click', () => {
     auth.signOut();
 
 });
+
 
